@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet'>
+    <script src="JS/jquery-3.2.1.js"></script>
+    <script src="JS/adminscript.js"></script>
+    <style>
+        body, html {
+            font-family: 'Carme';
+            font-size: 22px;
+            height: 100%;
+            padding:0px;
+            margin:0px;
+        }
+
+        .parallax1 {
+            /* Imagen a usar */
+            background-image: url('planetas6.jpg');
+            /* cuanto ocupa */
+            height: 40%;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #welcome {
+            letter-spacing: 15px;
+            padding: 20px;
+            color: white;
+        }
+
+        #boton {
+            letter-spacing: 8px;
+            font-size: 20px;
+            width: 440px;
+            height: 40px;
+            background: #404040;
+            color: #ffffff;
+        }
+
+        #nombreU {
+            width: 250px;
+        }
+
+        .eliminar, .editar {
+            margin-left: 20px;
+            letter-spacing: 8px;
+            font-size: 20px;
+            width: 200px;
+            height: 40px;
+            background: #101010;
+            color: #ffffff;
+        }
+
+        #div1 {
+            height: auto;
+        }
+
+        .dropdown {
+            position: relative;/**/
+            display: inline-block;/*VERTICAL*/
+        }
+
+        .dropbtn {
+            letter-spacing: 6px;
+            background-color: #909090;
+            color: black;
+            padding: 10px 16px 10px 16px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            min-width: 120px;
+        }
+
+        .dropdown-content {
+            letter-spacing: 6px;
+            display: none;
+            position: absolute;
+            font-size: 18px;
+            background-color: #c0c0c0;
+            min-width: 165px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 16px 10px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #a0a0a0}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #606060;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+
+    <div class="parallax1">
+        <br />
+        <div class="dropdown">
+            <button class="dropbtn">OPCIONES</button>
+            <div class="dropdown-content">
+                <a href=''>SALIR</a>
+            </div>
+        </div>  <br />
+        <h1 id="welcome" align="center">BIENVENIDO, ADMIN</h1>  <br />
+    </div>  <br />
+
+
+
+
+    <div style="background-color:#ffffff;font-size:36px" align="center">
+        <button id="boton">AGREGAR USUARIOS</button>
+    </div>  <br />
+
+
+
+
+    <div id="div1">
+        <!-- aqui se anexan los botones-->
+    </div><br />
+
+
+
+
+
+
+    <div class="parallax1"></div>
+    <div style="height:200px;background-color:#ffffff;font-size:36px">
+        <h3 align="center" style="font-size:15px">Edu Planet S.A. de C.V</h3>
+        <p align="center" style="font-size:15px">direccion: escom, calle escom, ciudad escom, pais escom</p>
+        <p align="center" style="font-size:15px">email: escomescomescom@escom.es</p>
+        <p align="center" style="font-size:15px">tlf: 55-55555555</p>
+        <p align="center" style="font-size:15px">empresa: escom</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body, html {
+    font-family: 'Carme';
+    font-size: 22px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.parallax1 {
+    /* Imagen a usar */
+    background-image: url('../planetas3.jpg');
+    /* cuanto ocupa */
+    height: 40%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* Imagen a usar */
+    background-image: url('../planetas4.jpg');
+    /* cuanto ocupa */
+    height: 40%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    letter-spacing: 15px;
+    padding: 20px;
+    color: white;
+}
+
+#boton {
+    letter-spacing: 8px;
+    font-size: 20px;
+    width: 440px;
+    height: 40px;
+    background: #404040;
+    color: #ffffff;
+}
+
+.visualizar {
+    margin-left: 20px;
+    letter-spacing: 8px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background: #101010;
+    color: #ffffff;
+}
+
+#div1 {
+    height: auto;
+    padding-bottom: 30px;
+}

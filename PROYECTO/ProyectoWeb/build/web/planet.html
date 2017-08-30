@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exposición</title>
+    <meta charset="UTF-8"/>
+    <script src="JS/FileSaver.js"></script>
+    <script src="JS/jquery-3.2.1.js"></script>
+    <script src="JS/Gravity.js"></script>
+    <script src="JS/Particle.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
+    <script>
+      var interval = -1; var newParticleSize = 100;
+      function start(){if(interval == -1){interval = window.setInterval("main();",20);}}
+      function stop(){clearInterval(interval);interval = -1;}
+      function setSize(size){document.getElementById("mass").value=size.toExponential(1).replace("+","");setNewMass(size);}
+      function clearCanvas(){particleList = [];}
+    </script>
+  </head>
+  <body onload = "init();start();" style="background-color:black">
+    <div class="noselect">
+      <div id="controlbox" style="z-index:4">
+	<table>
+            <tr>Masa<br/><br/><input type="text" value="1.0e3" class="txt" style="width:80%;text-align:center" id="mass"/><br/></tr></br>
+	  <tr><button onclick="setSize(1000)">Mini</button></tr></br>
+	  <tr><button onclick="setSize(10000)">Pequeño</button></tr></br>
+	  <tr><button onclick="setSize(100000)">Mediano</button></tr></br>
+	  <tr><button onclick="setSize(1000000)">Grande</button></tr>
+	</table>
+	<button onclick="start()">Iniciar</button><br/>
+	<button onclick="stop()">Parar</button><br/>
+	<button onclick="clearCanvas()">Limpiar</button><br/>
+        <button onclick="serverSave()">Guardar</button><br/>
+	<input type="file" id="files" name="inputFile" style="display:none;"/><br/>
+      </div>
+    </div>
+    <canvas id="canvas" style=";z-index:-1;position:absolute;left: 0px;top: 0px;"></canvas>
+    <div id="homebox"><a style="background-color:#000000; color:white;font-size:15px;" onclick="window.history.back()">Regresar</a></div>
+  </body>
+</html>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="login.xsd">
+    <usuario>
+        <nombre>Ana</nombre>
+        <tipo>Admin</tipo>
+        <password>bobesponja</password>
+    </usuario>
+    <usuario>
+        <nombre>Erick</nombre>
+        <tipo>Admin</tipo>
+        <password>bobesponja</password>
+    </usuario>
+    <usuario>    
+        <nombre>Peredo</nombre>
+        <tipo>Profesor</tipo>
+        <password>bobesponja</password>
+    </usuario>
+    <usuario>
+        <nombre>Chespirito</nombre>
+        <tipo>Alumno</tipo>
+        <password>bobesponja</password>
+    </usuario>
+</class>
